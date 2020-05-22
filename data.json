@@ -1,0 +1,38 @@
+[
+    {
+        "language":"telugu",
+        "name":"maharshi",
+        "availablein":"amazon prime"
+        
+    },
+    {
+        "language":"telugu",
+        "name":"nenokkadine",
+        "availablein":"youtube"
+    },
+    {
+        "language":"kannada",
+        "name":"googly",
+        "availablein":"youtube"
+    },
+    {
+        "language":"kannada",
+        "name":"kgf",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"hindi",
+        "name":"karthik vs karthik",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"english",
+        "name":"inception",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"english",
+        "name":"shutter island",
+        "availablein":"amazon prime"
+    }
+]
