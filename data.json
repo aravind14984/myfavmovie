@@ -34,5 +34,62 @@
         "language":"english",
         "name":"shutter island",
         "availablein":"amazon prime"
+    },
+    {
+        "language":"tamil",
+        "name":"Asuran",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"tamil",
+        "name":"Hero",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"malyalam",
+        "name":"Charlie",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"malyalam",
+        "name":"Anjam-pathura",
+        "availablein":"Jio movies"
+    },
+    {
+        "language":"malyalam",
+        "name":"Android kunjappan",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"wenglish",
+        "name":"Witcher",
+        "availablein":"Netflix"
+    },
+    {
+        "language":"wenglish",
+        "name":"Money Heist",
+        "availablein":"Netflix"
+    },
+    {
+        "language":"wenglish",
+        "name":"Game of thrones",
+        "availablein":"HBO"
+    },
+    {
+        "language":"whindi",
+        "name":"Asur",
+        "availablein":"voot originals"
+    },
+    {
+        "language":"whindi",
+        "name":"Mirzapur",
+        "availablein":"amazon prime"
+    },
+    {
+        "language":"whindi",
+        "name":"Sacred games",
+        "availablein":"Netflix"
     }
+
+
 ]

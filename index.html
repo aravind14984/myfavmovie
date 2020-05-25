@@ -14,8 +14,30 @@
 <body>
 
 <div class="container">
-<p class='text-monospace display-4 text-center'>Welcome to my List of Movies</p>
-
+<nav class="navbar navbar-expand-sm navbar-light  bg-info mb-5 mt-5">
+    <p class="navbar-brand text-uppercase text-justify display-4  mx-auto font-weight-bold font-italic" >Welcome to my List of Movies</p>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#aru">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="aru">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a href="#" class="btn btn-success border-secondary font-weight-bold nav-link dropdown-toggle" data-toggle="dropdown">account-type</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="nav-link font-weight-bold active dropdown-item">guest</a>
+                    <a href="#" class="nav-link font-weight-bold dropdown-item">premium</a>
+                </div>
+        </li>
+        <li  class="nav-item dropdown">
+            <a href="#" class="btn btn-success nav-link border-secondary dropdown-toggle font-weight-bold" data-toggle='dropdown'>login</a>
+            <div class="dropdown-menu">
+             <a href="#" class="btn btn-warning dropdown-item nav-link font-weight-bold">signup</a>
+            </div>
+            
+        </li>      
+    </ul>
+</div>
+</nav>
 <div class="btn-toolbar">
 <div class='btn-group-vertical'>
 <div class='dropdown'>
@@ -56,6 +78,8 @@
 <script src='app.js'>
         
 </script>
+<script src="diffget.js"></script>
+
 </body>
     
   
