@@ -1,55 +1,63 @@
 document.getElementById('telugu').addEventListener('click',function(e)
 {
     dataget('telugu');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 document.getElementById('hindi').addEventListener('click',function(e)
 {
     dataget('hindi');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 document.getElementById('kannada').addEventListener('click',function(e)
 {
     dataget('kannada');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 document.getElementById('Tamil').addEventListener('click',function(e)
 {
     dataget('tamil');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 document.getElementById('Malyalam').addEventListener('click',function(e)
 {
     dataget('malyalam');
-    removetable();
+   // removetable();
     e.preventDefault();
 });
 document.getElementById('English').addEventListener('click',function(e)
 {
     dataget('english');
-    removetable();
+   // removetable();
     e.preventDefault();
 });
 document.getElementById('Wenglish').addEventListener('click',function(e)
 {
     dataget('wenglish');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 document.getElementById('Whindi').addEventListener('click',function(e)
 {
     dataget('whindi');
-    removetable();
+    //removetable();
     e.preventDefault();
 });
 function dataget(v){
 let a=new gettingall();
 let b=a.alldata().then((data)=> {
     console.log(data);
+    let m=document.createElement('div');
+    m.className="alert border-dark alert-dismissible";
+    let d=document.createElement('button');
+    d.className="close";
+    d.setAttribute('data-dismiss','alert');
+    d.innerHTML=`<span>&times;</span>`;
+    m.appendChild(d);
+    
     let u=document.createElement('table');
            u.className='table table-hover table-bordered table-danger mt-5';
            let op=
@@ -59,7 +67,7 @@ let b=a.alldata().then((data)=> {
            <th>language</th>
            <th>moviename</th>
            <th>available at</th>
-           <tr>
+           </tr>
            </thead>
            <tbody>`;
 let c=Array.from(data);
@@ -76,20 +84,24 @@ c.forEach((x)=>{
         
         `
     }
-    u.innerHTML=op+`</tbody>`;
-    let s=document.querySelector('.container');
-    s.appendChild(u);
-   
+    
 
 });
+u.innerHTML=op+`</tbody>`;
+    console.log(u);
+    m.appendChild(u);
+    console.log(m);
+    let s=document.querySelector('.container');
+    s.appendChild(m);
+   
 
 
 
 
-}).catch((error)=>console.log('cc'));
+}).catch((error)=>console.log(error));
 
 }
-function removetable()
+/*function removetable()
 {
     
 setTimeout(function()
@@ -97,5 +109,5 @@ setTimeout(function()
     document.querySelector('table').remove();
 
 },5000);
-}
+}*/
 
