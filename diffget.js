@@ -52,44 +52,42 @@ let b=a.alldata().then((data)=> {
     console.log(data);
     let m=document.createElement('div');
     m.className="alert border-dark alert-dismissible";
+   
     let d=document.createElement('button');
     d.className="close";
     d.setAttribute('data-dismiss','alert');
     d.innerHTML=`<span>&times;</span>`;
     m.appendChild(d);
     
-    let u=document.createElement('table');
-           u.className='table table-hover table-bordered table-danger mt-5';
-           let op=
-           `
-           <thead class='table table-dark'>
-           <tr>
-           <th>language</th>
-           <th>moviename</th>
-           <th>available at</th>
-           </tr>
-           </thead>
-           <tbody>`;
+           let a1=document.createElement('div');
+           a1.className="card-columns";
+         
 let c=Array.from(data);
+let op='';
 c.forEach((x)=>{
   
     if(x.language===v)
     {
-        op+=`<tr>
-        <td>${x.language}</td>
-        <td>${x.name}</td>
-        <td>${x.availablein}</td>
-        </tr>
-        
-        
-        `
+      op+=`
+        <div class="card ">
+        <img class="card-img-top" src="${x.image}">
+        <div class="card-body">
+        <h5 class="card-title bg-dark text-center text-capitalize font-weight-bold text-light text-nowrap">${x.name}</h1>
+        <footer class="text-justify text-center text-capitalize font-weight-bold bg-dark text-light text-nowrap mb-1">${x.availablein}</p> 
+        </div>
+        </div>`;
     }
     
 
 });
-u.innerHTML=op+`</tbody>`;
-    console.log(u);
-    m.appendChild(u);
+console.log(op);
+
+a1.innerHTML=op;
+
+    
+
+   
+    m.appendChild(a1);
     console.log(m);
     let s=document.querySelector('.container');
     s.appendChild(m);
